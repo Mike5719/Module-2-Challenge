@@ -1,0 +1,156 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content:center;*/
+    align-items: center;
+    background-color:rgb(3, 40, 252);
+    color:bisque;
+    padding: 2%;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+nav a {
+    color:bisque;
+    font-weight: bold;
+  }
+
+h2,h3 {
+    margin: 2% 0;
+    font-size: 250%;
+}
+
+h4 {
+    font-size:smaller;
+}
+
+main { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    }
+
+.cardfirst {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50px;
+    padding: 10px 10px 30px 10px;
+    flex:  0 0 450px;
+    background-color: antiquewhite;
+    box-shadow: 10px 10px 5px goldenrod;
+    margin: 20px;
+}
+
+.cardrest {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50px;
+    padding: 10px 10px 30px 10px;
+    flex:  0 0 200px;
+    background-color: antiquewhite;
+    box-shadow: 10px 10px 5px goldenrod;
+    margin: 20px;
+}
+
+.deployed {
+    flex: 5;
+    background-color:rgb(230, 227, 218);
+    padding: 50;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /*margin: 20px;*/
+    
+}
+
+.cardfirst h4 {
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px;
+    background-color: rgb(142, 195, 219);
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.cardrest h4 {
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px;
+    background-color: rgb(142, 195, 219);
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+section {
+    padding: 2%;
+    background-color:beige;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color:rgb(3, 40, 252);
+    color:bisque
+}
+
+h5 {
+    font-size: x-large;
+    margin: 10px;
+}
+
+.cardrest img {
+    width: 100%;
+    /*min-width: 400px;*/
+}
+
+.cardfirst img {
+    width: 100%;
+    /*min-width: 475px;*/
+}
+
+@media screen and (max-width: 992px) {
+    .cardfirst {
+        width: 75%;
+    }
+    
+    .cardrest{
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .cardfirst {
+        width: 50%;
+    }
+
+    .cardrest{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .cardfirst {
+        width: 25%;
+    }
+
+    .cardrest{
+        width: 25%;
+    }
+}
