@@ -1,3 +1,12 @@
+:root{
+    --header-footer-background:rgb(3, 40, 252);
+    --header-footer-text: bisque;
+    --card-background: antiquewhite;
+    --card-shadow: 10px 10px 5px goldenrod;
+    --card-padding: 10px 10px 30px 10px;
+    --card-border-radius: 50px 50px 0px 0px;
+}
+
 body {
     display: flex;
     flex-wrap: wrap;
@@ -8,8 +17,8 @@ header {
     flex-wrap: wrap;
     /*justify-content:center;*/
     align-items: center;
-    background-color:rgb(3, 40, 252);
-    color:bisque;
+    background-color: var(--header-footer-background);
+    color: var(--header-footer-text);
     padding: 2%;
 }
 
@@ -47,10 +56,10 @@ main {
     border-style: solid;
     border-width: 2px;
     border-radius: 50px;
-    padding: 10px 10px 30px 10px;
+    padding: var(--card-padding);
     flex:  0 0 450px;
-    background-color: antiquewhite;
-    box-shadow: 10px 10px 5px goldenrod;
+    background-color: var(--card-background);
+    box-shadow: var(--card-shadow);
     margin: 20px;
 }
 
@@ -58,10 +67,10 @@ main {
     border-style: solid;
     border-width: 2px;
     border-radius: 50px;
-    padding: 10px 10px 30px 10px;
+    padding: var(--card-padding);
     flex:  0 0 200px;
-    background-color: antiquewhite;
-    box-shadow: 10px 10px 5px goldenrod;
+    background-color: var(--card-background);
+    box-shadow: var(--card-shadow);
     margin: 20px;
 }
 
@@ -78,7 +87,7 @@ main {
 }
 
 .cardfirst h4 {
-    border-radius: 50px 50px 0px 0px;
+    border-radius: var(--card-border-radius);
     padding: 20px;
     background-color: rgb(142, 195, 219);
     text-align: center;
@@ -87,7 +96,7 @@ main {
 }
 
 .cardrest h4 {
-    border-radius: 50px 50px 0px 0px;
+    border-radius: var(--card-border-radius);
     padding: 20px;
     background-color: rgb(142, 195, 219);
     text-align: center;
@@ -105,8 +114,8 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 2%;
-    background-color:rgb(3, 40, 252);
-    color:bisque
+    background-color: var(--header-footer-background);
+    color: var(--header-footer-text);
 }
 
 h5 {
