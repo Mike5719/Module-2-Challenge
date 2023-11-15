@@ -1,3 +1,4 @@
+/* root variables assigned */
 :root{
     --header-footer-background:rgb(3, 40, 252);
     --header-footer-text: bisque;
@@ -13,29 +14,19 @@ body {
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
-    /*justify-content:center;*/
-    align-items: center;
+    text-align: center;
     background-color: var(--header-footer-background);
     color: var(--header-footer-text);
-    padding: 2%;
-}
+    padding: 40px;
+    width: 100%;
+} 
+
+/* text formatting for all headings */
 
 h1 {
     font-size: 300%;
+    padding-bottom: 2%;
 }
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-}
-
-nav a {
-    color:bisque;
-    font-weight: bold;
-  }
 
 h2,h3 {
     margin: 2% 0;
@@ -46,11 +37,45 @@ h4 {
     font-size:smaller;
 }
 
+h5 {
+    font-size: x-large;
+    margin: 10px;
+}
+
+p {
+    font-size: 125%;
+}
+
+/* styling applied for navigation bar and links */
+
+nav {
+    display: flex;
+    justify-content:space-around;
+    min-width: 300px;
+    background-color: var(--header-footer-background);
+    width: 100%;
+}
+
+nav a {
+    font-size: 200%;
+    color:bisque;
+    font-weight: bold;
+  }
+
 main { 
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
     }
+
+ /* formats About Me section */
+
+section {
+    padding: 1%;
+    background-color:beige;
+}
+
+ /* styling applied for website application cards */
 
 .cardfirst {
     border-style: solid;
@@ -82,7 +107,6 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
-    /*margin: 20px;*/
     
 }
 
@@ -104,10 +128,7 @@ main {
     font-size: xx-large;
 }
 
-section {
-    padding: 2%;
-    background-color:beige;
-}
+/* styling for footer section */
 
 footer {
     display: flex;
@@ -118,20 +139,17 @@ footer {
     color: var(--header-footer-text);
 }
 
-h5 {
-    font-size: x-large;
-    margin: 10px;
-}
+/* ensures imgage will fill box */
 
 .cardrest img {
     width: 100%;
-    /*min-width: 400px;*/
 }
 
 .cardfirst img {
     width: 100%;
-    /*min-width: 475px;*/
 }
+
+/* responsive formatting for screens/devices of various size */
 
 @media screen and (max-width: 992px) {
     .cardfirst {
@@ -142,7 +160,6 @@ h5 {
         width: 75%;
     }
 }
-
 
 @media screen and (max-width: 768px) {
     .cardfirst {
