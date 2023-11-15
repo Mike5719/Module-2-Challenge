@@ -32,6 +32,13 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
 
+Usage:
+
+Below is a screenshot of the Project 1 deployed application webpage.
+
+![refactor](./refactor.png)
+
+
 Credits:
 
 The Mickey Mouse avatar was copied from this website --> https://disney-destiny.fandom.com/wiki/Mickey_Mouse
